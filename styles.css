@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#navbar {
+    position: fixed;
+    box-sizing: border-box;
+    height: 100vw;
+    width: 360px;
+    color: black;
+    border: 2px solid #999999;
+    border-top: none;
+}
+
+#navbar header {
+    font-size: 30px;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+.navbar-ul li {
+    border-top: 1px solid #999999;
+    padding: 10px 30px;
+}
+
+.navbar-ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 360px;
+    padding: 20px 40px;
+}
+
+#main-doc header{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#main-doc p {
+    padding-left: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.indent {
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.indent2 {
+    margin-left: 60px;
+    padding-left: 10px;
+}
+
+
+#main-doc ol li,
+#main-doc ul li {
+    line-height: 30px;
+}
+
+code {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(184, 169, 149);
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.circle-button {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px; 
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+  }
+  
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+  }
+
+@media (max-width: 850px) {
+    #navbar {
+        /* top: 0; */
+        border: none;
+        /* background-color: green; */
+        height: auto;
+    }
+    #navbar,
+    .navbar-ul {
+        position: sticky;
+        width: 100%;
+        border-right: none;
+    }
+
+    .navbar-ul {
+        box-sizing: border-box;
+        overflow-y: scroll;
+        height: 200px;
+        border: 2px solid black;
+    }
+
+    #navbar header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #main-doc {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+  }

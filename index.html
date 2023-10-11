@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Documentation</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+        <header>
+            CSS Documentation
+        </header>
+        <ul class="navbar-ul">
+            
+            <a class="nav-link" href="#introduction">
+                <li>
+                    Introduction
+                </li>
+            </a>
+            <a class="nav-link" href="#history">
+                <li>
+                    History
+                </li>
+            </a>
+            <a class="nav-link" href="#css_basic_knowledge">
+                <li>
+                    CSS Basic Knowledge
+                </li>
+            </a>
+            <a class="nav-link" href="#css_basic_syntax">
+                <li>
+                    CSS Basic Syntax    
+                </li>
+            </a>
+            <a class="nav-link" href="#css_selectors">
+                <li>
+                    CSS Selectors
+                </li>
+            </a>
+            <a class="nav-link" href="#reference">
+                <li>
+                    Reference
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section  id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+            CSS, which stands for Cascading Style Sheets, is a fundamental technology in web development that plays a crucial role in defining the visual presentation and layout of web pages. It serves as the design language of the internet, enabling web developers and designers to control how HTML elements are displayed on a user's browser. 
+        </p>
+        <p>CSS allows for the customization of fonts, colors, spacing, positioning, and more, ensuring that websites are not only functional but also aesthetically pleasing. With its cascading nature, CSS allows developers to create consistent and responsive designs across various devices and screen sizes, making it an essential tool for crafting compelling and user-friendly web experiences.</p>
+      </section>
+
+      <section  id="history" class="main-section">
+        <header>History</header>
+        <p>CSS, or Cascading Style Sheets, has a rich history that spans several decades. Here's a brief overview of its evolution:</p>
+        <ol>
+            <li>
+                Emerged in the <span class="bold">mid-1990s</span> to separate content from presentation on the web.
+            </li>
+            <li>
+                <span class="bold">CSS2 (1998)</span> added advanced styling features and layout control.
+            </li>
+            <li>
+                <span class="bold">CSS3</span> modularized features, fostering rapid development.
+            </li>
+            <li>
+                Overcame browser compatibility issues in the <span class="bold">early 2000s</span>.
+            </li>
+            <li>
+                Enabled responsive design for mobile devices in the <span class="bold">2010s</span>.
+            </li>
+            <li>
+                Introduced layout tools like <span class="bold">CSS Grid</span> and <span class="bold">Flexbox</span>.
+            </li>
+            <li>
+                Continues to evolve, with <span class="bold">CSS4</span> in development, shaping modern web design.
+            </li>
+        </ol>
+      </section>
+      <section  id="css_basic_knowledge" class="main-section">
+        <header>CSS Basic Knowledge</header>
+        <p>
+            As a beginner in CSS (Cascading Style Sheets), it's essential to start with the fundamentals and progressively build your skills. Here's a structured guide on what to study:</p>
+        <ol>
+            <li>
+                <span class="bold">Basic Syntax:</span> Begin with understanding the basic syntax of CSS, which includes selectors, properties, and values.
+            </li>
+            <li>
+                <span class="bold">CSS Selectors:</span> Learn how to select HTML elements using different types of selectors, such as element selectors, class selectors, ID selectors, and more.
+            </li>
+
+            <li>
+                <span class="bold">Properties and Values:</span> Familiarize yourself with common CSS properties and their values, including properties for text formatting (e.g., font-size, color), element positioning (e.g., margin, padding), and layout (e.g., display, float).
+            </li>
+
+            <li>
+                <span class="bold">Box Model:</span> Understand the CSS box model, which defines how elements are structured with content, padding, borders, and margins. This is crucial for layout design.
+            </li>
+
+            <li>
+                <span class="bold">Positioning:</span> Learn about CSS positioning, including relative, absolute, fixed, and static positioning. Understanding positioning is vital for creating layouts.
+            </li>
+
+            <li>
+                <span class="bold">Typography:</span> Explore CSS properties related to typography, like font-family, font-size, line-height, and text-align, to control text presentation.
+            </li>
+        </ol>
+      </section>
+      <section  id="css_basic_syntax" class="main-section">
+        <header>CSS Basic Syntax 
+        </header>
+
+        <p>
+            In CSS, the basic syntax refers to the structure and rules you need to follow when writing CSS code. It's the foundation upon which all your CSS styling is built. Here's a breakdown of the key components:
+        </p>
+        <p>
+            <span class="bold">Selectors:</span> A selector is a pattern that matches one or more HTML elements, specifying which elements you want to style. Selectors are used to target elements by their type, class, ID, or other attributes. For example:
+        </p>
+        <ul>
+            <li>
+                <span class="bold">Element selector:</span> p selects all &lt;p&gt; (paragraph) elements.
+            </li>
+            <li>
+                <span class="bold">Class selector:</span> .btn selects all elements with the class "btn."
+            </li>
+            <li>
+                <span class="bold">ID selector:</span> #header selects the element with the ID "header."
+            </li>
+        </ul>
+        <p>
+            <span class="bold">Properties:</span> Properties are the specific aspects of an element's style that you want to change. Each property has a name (e.g., color, font-size, margin) and accepts a value that determines how the property should be applied. For example:
+        </p>
+        <ul>
+            <li>
+                color: blue; sets the text color to blue.
+            </li>
+            <li>
+                font-size: 16px; sets the font size to 16 pixels.
+            </li>
+            <li>
+                margin-top: 20px; sets the top margin to 20 pixels.
+            </li>
+        </ul>
+        <p>
+            Values: Values are the specific settings you assign to a property. These values can be numerical values (e.g., 20px, 2em), text values (e.g., font names), or color values (e.g., #FF0000 for red).
+        </p>
+        <p>
+            Here's an example of CSS code with basic syntax:
+        </p>
+        <code>
+            /* Selector */
+                <span></span>p {
+                    <span class="indent">/* Property: Value */</span>
+                    <span class="indent">color: blue;</span>
+                    <span class="indent">font-size: 16px;</span>
+                    <span class="indent">margin-top: 20px;</span>
+                    }
+        </code>
+        <p>
+            In this example:
+        </p>
+        <ul>
+            <li>
+                <span class="bold">p</span> is the selector targeting all &lt;p&gt; elements.
+            </li>
+            <li>
+                <span class="bold">color</span>, <span class="bold">font-size</span>, and <span class="bold">margin-top</span> are properties.
+            </li>
+            <li>
+                <span class="bold">blue</span>, <span class="bold">16px</span>, and <span class="bold">20px</span> are the corresponding values for each property.
+            </li>
+        </ul>
+
+        <p>
+            When you apply CSS to an HTML document, the styles defined in your CSS code will be applied to the HTML elements that match your selectors, affecting their appearance on the web page.  
+        </p>
+        <p>
+            Understanding and using the basic syntax of CSS is essential because it forms the core of all CSS styling. As you progress, you'll use more advanced selectors and properties to create intricate and customized designs for your web projects.
+        </p>
+      </section>
+      <section  id="css_selectors" class="main-section">
+        <header>CSS Selectors
+        </header>
+        <p>
+            Selectors are a fundamental part of CSS as they determine which HTML elements your CSS rules should be applied to. They help you target and style specific elements or groups of elements on a web page. Here are some commonly used selectors:
+        </p>
+        <ol>
+            <li>
+                <span class="bold">Element Selector:</span> An element selector targets HTML elements based on their tag name. For example, using p as a selector will apply the style to all &lt;p&gt; (paragraph) elements on the page.</br>
+                <code>
+                    p {
+                        <span class="indent">/* CSS rules here */</span>
+                    }
+                </code>
+            </li>
+            <li>
+                <span class="bold">Selector:</span> A class selector is denoted by a period (.) followed by the class name. It selects elements with a specific class attribute. For instance, <span class="bold">.btn</span> will target all elements with <span class="bold">class="btn"</span>.
+                <code>
+                    .btn {
+                        <span class="indent">/* CSS rules here */</span>
+                    }
+                </code>
+            </li>
+            <li>
+                <span class="bold">ID Selector:</span> An ID selector is indicated by a hash (<span class="bold">#</span>) followed by the ID name. It selects a single element with a specific ID attribute. For example, <span class="bold">#header</span> will select the element with <span class="bold">id="header"</span>.
+                <code>
+                    #header {
+                        <span class="indent">/* CSS rules here */</span>
+                    } 
+                </code>
+            </li>
+            <li>
+                <span class="bold">Descendant Selector:</span> You can target elements that are descendants of other elements using the descendant selector. For instance, ul li will select all &lt;li&gt; elements within a &lt;ul&gt; (unordered list).
+                <code>
+                    ul li {
+                        <span class="indent">/* CSS rules here */</span>
+                    }
+                </code>
+            </li>
+            <li>
+                <span class="bold">Child Selector:</span> A child selector selects elements that are direct children of a specific element. It uses the <span class="bold">></span> symbol. For example, <span class="bold">ul > li</span> selects &lt;li&gt; elements that are direct children of a &lt;ul&gt;.
+                <code>
+                    ul > li {
+                        <span class="indent">/* CSS rules here */</span>
+                    }
+                </code>
+            </li>
+            <li>
+                <span class="bold">Attribute Selector:</span> You can target elements based on their attributes. For instance, <span class="bold">[type="text"]</span> selects all elements with <span class="bold">type="text"</span>.
+                <code>
+                    [type="text"] {
+                        <span class="indent">/* CSS rules here */</span>
+                    }
+                </code>
+            </li>
+            <li>
+                <span class="bold">Pseudo-classes and Pseudo-elements:</span> Pseudo-classes target elements in specific states or conditions, such as <span class="bold">:hover</span> for elements when the mouse is over them. Pseudo-elements style specific parts of elements, such as <span class="bold">::before</span> and <span class="bold">::after</span> for creating additional content.
+                <code>
+                    a:hover {
+                        <span class="indent">/* CSS rules for links when hovered */</span>
+                    }
+                    
+                    p::first-line {
+                        <span class="indent">/* CSS rules for the first line of a paragraph */</span>
+                    }
+                </code>
+            </li>
+            <li>
+                <span class="bold">Grouping Selector:</span> You can group multiple selectors together, separating them with commas. This allows you to apply the same styles to different elements with different selectors.
+                <code>
+                    h1, h2, h3 {
+                        <span class="indent">/* CSS rules for heading elements */</span>
+                    }
+                </code>
+                <p>
+                    By mastering these selectors, you gain precise control over which HTML elements your CSS styles affect. This is essential for creating well-structured and visually appealing web designs. As you become more proficient in CSS, you'll often combine multiple selectors to target specific elements effectively.
+                </p>
+            </li>
+        </ol>
+      </section>
+      <section  id="reference" class="main-section">
+        <header>Reference</header>
+        <ul>
+            <li>
+                All the documentation in this page is generated from <a href="https://chat.openai.com/" target="_blank">ChatGPT.</a>
+            </li>
+            <li>
+                For more detailed and in-depth information about CSS, you can check <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN.</a>
+            </li>
+        </ul>
+      </section>
+    </main>
+
+    <a href="#top">
+        <div class="circle-button">
+            <i class="arrow-up"></i>
+        </div>
+    </a>
+    
+  </body>
+</html>
+
